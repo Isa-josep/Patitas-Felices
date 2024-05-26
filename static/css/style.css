@@ -1,23 +1,192 @@
 /* Estilos generales */
-body { font-family: sans-serif; margin: 0; }
-.container { width: 80%; margin: 0 auto; padding: 20px; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 /* Header */
-header { background-color: #f0f0f0; padding: 10px 0; }
-header h1 { margin: 0; }
-nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: flex-end; }
-nav li { margin-left: 20px; }
-.login-button { background-color: #4CAF50; color: white; padding: 8px 15px; border: none; border-radius: 5px; text-decoration: none; }
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
 /* Hero */
-#hero { background-image: url('imagen_hero.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 0; }
-#hero h2 { font-size: 36px; margin-bottom: 20px; }
-#hero p { font-size: 18px; margin-bottom: 30px; }
-.cta-button { background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+#hero {
+    background-image: url('imagen_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
 
 /* Servicios */
-#servicios { padding: 50px 0; }
-#servicios h2 { text-align: center; margin-bottom: 40px; }
-.service-cards { display: flex; justify-content: space-around; }
-.card { text-align: center; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.card img { width: 80px; margin-bottom: 20px; }
+#servicios {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Citas */
+#citas {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+#citas h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

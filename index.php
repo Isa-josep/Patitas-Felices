@@ -22,9 +22,10 @@
         </div>
         <button type="submit">Iniciar Sesión</button>
       </form>
+      <p>¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
     </div>
     <div class="image-container">
-      <!-- <img src="imagen_patitas.jpg" alt="Imagen de Patitas Felices">  -->
+      <img src="imagen_patitas.jpg" alt="Imagen de Patitas Felices"> 
     </div>
   </div>
 </body>
