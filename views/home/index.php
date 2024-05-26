@@ -13,12 +13,12 @@
             <nav>
                 <ul>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="agregar_mascota.php">Agregar Mascota</a></li>
                     <li><a href="agendar_cita.php">Agendar Cita</a></li>
                     <li><a href="ver_citas.php?tipo=pendientes">Citas Pendientes</a></li>
                     <li><a href="ver_citas.php?tipo=pasadas">Citas Pasadas</a></li>
+                    <li><a href="producto.php">Productos</a></li>
+                    <li><a href="historial_compras.php">Compras</a></li>
                 </ul>
             </nav>
         </div>
